@@ -21,6 +21,8 @@
       <p>Total: ${{ total }}</p>
       <button @click="checkout">Checkout</button>
     </div>
+    <!-- เพิ่มปุ่มใหม่ -->
+    <button @click="newButtonAction">New Button</button>
   </div>
 </template>
  
@@ -64,6 +66,9 @@ export default {
     checkout() {
       alert(`Total amount: $${this.total}`);
       this.cart = [];
+    },
+    newButtonAction() {
+      alert('New Button Clicked!');
     },
   },
 };
